@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step on the black block</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="head">
+        <!-- 游戏标题 -->
+        <h2 class="title">Step on the black block</h2>
+        <!-- 开始游戏 -->
+        <div class="game-start">开始游戏</div>
+        <!-- 游戏得分 -->
+        <div class="score clearfix">
+            <div class="score-current left">当前得分：0</div>
+            <div class="score-best right">最高得分：0</div>
+        </div>
+    </header>
+
+    <!-- 游戏主区域 -->
+    <div class="main">
+        <!-- 方块区域 -->
+        <div class="lattices"></div>
+        <!-- 游戏结束 -->
+        <div class="game-end">游戏结束</div>
+    </div>
+
+    <!-- 游戏说明 -->
+    <pre class="description">
+
+  点中黑块，则积一分。
+
+  若点击空白区域，则游戏结束。
+
+  若有四次未点中黑块，则游戏结束。 
+
+  每刷新一次，重置最高得分。
+
+    </pre>
+</body>
+
+</html>
