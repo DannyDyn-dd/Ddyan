@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="Zh-CN">
+
+<head>
+  <!-- <meta charset="UTF-8"> -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jQuery.min.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="head">
+    <h2 class="title">个人中心</h2>
+    <div class="hend">
+      <!-- 默认头像-更换头像 -->
+      <div class="change-pic">
+        <img class="user-pic" src="./user-pic.webp" alt="头像">
+        <form class="pic-model" enctype="multipart/form-data">
+          <input class="picModel-ipt" accept=".gif,.png,.jpg,.jpeg" type="file">
+          <button class="picModel-btn" type="submit">更换头像</button>
+        </form>
+      </div>
+      <span class="descp">欢迎</span>
+      <a class="out" href="javascript:;">退出</a>
+    </div>
+  </div>
+  <!-- 主区域 -->
+  <div class="main">
+    <!-- 左侧列表 -->
+    <ul class="list-group aside-left">
+      <li class="list-group-item li-shouye">首页</li>
+      <li>
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="true">
+          文章管理
+          <span class="caret"></span>
+        </button>
+        <ul class="listLi">
+          <!-- <li class="list-group-item li-article-editor">文章编辑</li> -->
+          <li class="list-group-item li-article-list">文章列表</li>
+          <!-- <li class="list-group-item li-article-post">发布文章</li> -->
+          <li class="list-group-item li-article-post li-recycleBin">回收站</li>
+        </ul>
+      </li>
+
+      <!-- <li class="list-group-item li-all-post">历史发布</li>
+      <li class="list-group-item li-drafts">草稿箱</li> -->
+    </ul>
+    <!-- 右侧内容区 -->
+    <div class="aside-right">
+      <!-- 首页-基本信息及修改 -->
+      <div class="shouye">
+        <!-- 第一部分-显示用户基本信息 -->
+        <div class="userBase">
+          <h3>用户基本信息</h3>
+          <span class="user-uname">用户名：</span>
+          <span class="user-nname">昵称：</span>
+          <span class="user-email">邮箱：</span>
+        </div>
+        <!-- 第二部分-修改用户基本信息 -->
+        <div class="changeBase">
+          <h3>修改用户基本信息</h3>
+          <form>
+            设置昵称：<input class="nickBase" type="text">
+            <br>
+            设置邮箱：<input class="emailBase" type="text">
+            <br>
+            <button class="changeBase-btn" type="submit">确认修改</button>
+          </form>
+        </div>
+        <!-- 第三部分-修改用户密码 -->
+        <div class="change-pwd">
+          <h3>更改密码</h3>
+          <form>
+            旧密码：<input class="oldPwd" type="password">
+            <br>
+            新密码：<input class="newPwd" type="password">
+            <br>
+            <button class="change-btn" type="submit">更改</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- <div class="article-editor">文章编辑</div> -->
+
+      <!-- 文章列表及添加编辑删除操作 -->
+      <!-- 图书的表格 -->
+      <div class="article-list">
+        <div class="artList-head">
+          <span>当前文章分类</span>
+          <a class="list-add" href="javascript:;">添加</a>
+        </div>
+        <div class="listAdd-model">
+          <form class="add-form">
+            <!-- 表单一定要有name -->
+            书名：<input name="name" type="text">
+            <br>
+            别名：<input name="alias" type="text">
+            <br>
+            <button class="add-btn" type="submit">确认添加</button>
+            <button class="noadd-btn" type="button">取消添加</button>
+          </form>
+        </div>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>书名</th>
+              <th>别名</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody class="artList-tb">
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 回收站-回收&彻底删除 -->
+      <div class="recycleBin">
+        <div class="recycleBin-head">回收站</div>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>书名</th>
+              <th>别名</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody class="recycleBin-tb">
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <div class="article-post">发布文章</div>
+      <div class="all-post">历史发布</div>
+      <div class="drafts">草稿箱</div> -->
+    </div>
+  </div>
+
+</body>
+
+</html>

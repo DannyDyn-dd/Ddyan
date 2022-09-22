@@ -1,0 +1,343 @@
+// out: ../css/index.css
+
+/* 重置样式 */
+body,
+div,
+h2,
+h3,
+a,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* 重置文本框 */
+input,
+button {
+  border: none;
+  outline: none;
+  outline-offset: 0;
+}
+
+/* 重置按钮 */
+button {
+  background: initial;
+  padding: 0;
+}
+
+/* 统一样式 */
+input {
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* 内容样式 */
+.head {
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  // 两端对齐
+  justify-content: space-between;
+
+  .title {
+    margin: 0;
+  }
+
+  .hend {
+    display: flex;
+
+    .change-pic {
+      position: relative;
+
+      .user-pic {
+        width: 35px;
+        vertical-align: bottom;
+      }
+
+      .pic-model {
+        display: none;
+        cursor: pointer;
+        background-color: rgba(97, 69, 69, 0.5);
+        position: absolute;
+        top: -15px;
+        right: 0;
+
+        input {
+          display: none;
+        }
+
+        button {
+          font-size: 15px;
+          text-align: left;
+          padding-right: 20px;
+        }
+      }
+    }
+
+    .descp {
+      font-size: 25px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    .out {
+      text-decoration: none;
+      color: #8f8f8f;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    .out:hover {
+      color: #fff;
+    }
+  }
+}
+
+.main {
+  display: flex;
+
+  .aside-left {
+    width: 200px;
+    height: 74px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: rgb(50, 48, 48);
+
+    li,
+    .btn {
+      background-color: rgb(50, 48, 48);
+      color: #fff;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    .btn:hover {
+      background-color: rgb(67, 64, 64);
+      color: #fff;
+    }
+
+    .listLi {
+      padding: 0;
+
+      li {
+        width: 100%;
+        font-size: 12px;
+        background-color: rgb(67, 64, 64);
+      }
+    }
+  }
+
+  .aside-right {
+    margin: 2px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: rgba(97, 69, 69, 0.5);
+
+    width: 100%;
+    // height: 300px;
+    font-size: 24px;
+
+    .shouye {
+      display: flex;
+      font-size: 20px;
+      padding: 20px;
+      // 距离环绕(自身盒子的两边距离相同)
+      justify-content: space-around;
+
+      h3 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      input {
+        border: 1px solid #000;
+        width: 220px;
+        margin-top: 20px;
+      }
+
+      button {
+        width: 80px;
+        font-size: 18px;
+        border: 1px solid #000;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      .userBase {
+        width: 20%;
+
+        .user-uname,
+        .user-nname,
+        .user-email {
+          display: block;
+          margin-top: 25px;
+        }
+      }
+
+      .changeBase {
+        width: 40%;
+
+        .nickBase {
+          margin-top: 25px;
+        }
+      }
+
+      .change-pwd {
+        width: 35%;
+
+        .oldPwd {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    // .article-editor{
+
+    // }
+
+    .article-list {
+
+      // 统一样式
+      a {
+        text-decoration: none;
+        color: #372929;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+
+      font-size: 15px;
+
+      .artList-head {
+        font-size: 20px;
+        display: flex;
+        // 两端对齐
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 0;
+
+        a {
+          width: 50px;
+          border: 1px solid #000;
+          border-radius: 10px;
+        }
+      }
+
+      .listAdd-model {
+        display: none;
+        font-size: 25px;
+        width: 700px;
+        height: 300px;
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, .3);
+        border-radius: 10px;
+
+        .add-form {
+          width: 300px;
+          height: 200px;
+          background-color: rgba(255, 255, 255, .3);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 10px;
+          padding: 15px;
+
+          input{
+            width: 150px;
+            height: 30px;
+            margin-bottom: 30px;
+          }
+          button{
+            width: 125px;
+            height: 35px;
+            line-height: 35px;
+            border: 1px solid #000;
+            border-radius: 8px;
+          }
+          button:hover{
+            color: #fff;
+          }
+        }
+      }
+
+      table {
+
+        th,
+        td {
+          padding-left: 20px;
+        }
+
+        tbody {
+
+
+          tr:hover {
+            background-color: rgba(97, 69, 69, 0.2);
+          }
+        }
+      }
+    }
+
+    .recycleBin {
+
+      // 统一样式
+      a {
+        text-decoration: none;
+        color: #372929;
+      }
+
+      a:hover {
+        color: #fff;
+      }
+
+      font-size: 15px;
+
+      .recycleBin-head {
+        font-size: 20px;
+        display: flex;
+        // 两端对齐
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 20px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      table {
+
+        th,
+        td {
+          padding-left: 20px;
+        }
+        tbody {
+          tr:hover {
+            background-color: rgba(97, 69, 69, 0.2);
+          }
+        }
+      }
+    }
+  }
+}

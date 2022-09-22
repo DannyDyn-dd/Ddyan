@@ -1,0 +1,59 @@
+body,
+div,
+form,
+input,
+h2,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+/* 重置文本框 */
+input,
+button {
+  border: none;
+  outline: none;
+  outline-offset: 0;
+}
+/* 重置按钮 */
+button {
+  background: initial;
+  padding: 0;
+}
+.main {
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.main .title {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.main .reg {
+  width: 300px;
+  height: 130px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 18px;
+}
+.main .reg input {
+  border: 1px solid #000;
+  width: 220px;
+}
+.main .reg .pwd {
+  margin: 20px 0;
+  margin-left: 16px;
+}
+.main .reg button {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
