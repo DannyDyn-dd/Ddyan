@@ -38,9 +38,9 @@ $(function () {
         else if (backMessage.message === '注册成功！') {
           alert(backMessage.message + '即将跳转到登录页面');
           // console.log(true);
-          location.href = 'http://127.0.0.1:8080/src/login.html';
+          // location.href = 'http://127.0.0.1:8080/src/login.html';
           // 使用git存储时，访问不了该URL地址
-          // console.log(location.href.slice(0,-8) + 'login.html');
+          location.href = location.href.slice(0,-8) + 'login.html'
         }
         else alert('用户名(不能为空，1-10个字符)或密码(不能为空，6-12个字符)不符合规范');
       }
